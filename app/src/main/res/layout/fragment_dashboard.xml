@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:CircleProgressView="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:plainpie="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal"
+
+        android:weightSum="1">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="0.5"
+            android:elevation="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:text="Active vs All"
+                    android:textAlignment="center"
+                    android:textStyle="normal|bold" />
+
+                <TextView
+                    android:id="@+id/active_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:text="/"
+                    android:textAlignment="center" />
+
+                <at.grabner.circleprogress.CircleProgressView
+                    android:id="@+id/circleView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="10"
+                    card_view:cpv_barColor="@color/button_color"
+                    card_view:cpv_contourColor="#3333"
+                    card_view:cpv_rimColor="#3333"
+                    card_view:cpv_rimWidth="5dp"
+                    card_view:cpv_text="--"
+                    card_view:cpv_textMode="Text"
+                    card_view:cpv_textSize="25sp"
+                    card_view:cpv_unit="%"
+                    card_view:cpv_unitPosition="right_top"
+                    card_view:cpv_unitSize="25sp"
+                    card_view:cpv_value="0" />
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="0.5"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:text="Running vs Active"
+                    android:textAlignment="center"
+                    android:textStyle="normal|bold" />
+
+                <TextView
+                    android:id="@+id/running_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:text="/"
+                    android:textAlignment="center" />
+
+                <at.grabner.circleprogress.CircleProgressView
+                    android:id="@+id/circleView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="10"
+                    card_view:cpv_barColor="@color/button_color"
+                    card_view:cpv_contourColor="#3333"
+                    card_view:cpv_rimColor="#3333"
+                    card_view:cpv_rimWidth="5dp"
+                    card_view:cpv_text="--"
+                    card_view:cpv_textMode="Text"
+                    card_view:cpv_textSize="25sp"
+                    card_view:cpv_unit="%"
+                    card_view:cpv_unitPosition="right_top"
+                    card_view:cpv_unitSize="25sp"
+                    card_view:cpv_value="0" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="0.5"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:text="Idle vs Active"
+                    android:textAlignment="center"
+                    android:textStyle="normal|bold" />
+
+                <TextView
+                    android:id="@+id/idle_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:text="/"
+                    android:textAlignment="center" />
+
+                <at.grabner.circleprogress.CircleProgressView
+                    android:id="@+id/circleView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="10"
+                    card_view:cpv_barColor="@color/button_color"
+                    card_view:cpv_contourColor="#3333"
+                    card_view:cpv_rimColor="#3333"
+                    card_view:cpv_rimWidth="5dp"
+                    card_view:cpv_text="--"
+                    card_view:cpv_textMode="Text"
+                    card_view:cpv_textSize="25sp"
+                    card_view:cpv_unit="%"
+                    card_view:cpv_unitPosition="right_top"
+                    card_view:cpv_unitSize="25sp"
+                    card_view:cpv_value="0" />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="0.5"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:text="Stopped vs Active"
+                    android:textAlignment="center"
+                    android:textStyle="normal|bold" />
+
+                <TextView
+                    android:id="@+id/stopped_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:text="/"
+                    android:textAlignment="center" />
+
+                <at.grabner.circleprogress.CircleProgressView
+                    android:id="@+id/circleView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="10"
+                    card_view:cpv_barColor="@color/button_color"
+                    card_view:cpv_contourColor="#3333"
+                    card_view:cpv_rimColor="#3333"
+                    card_view:cpv_rimWidth="5dp"
+                    card_view:cpv_text="--"
+                    card_view:cpv_textMode="Text"
+                    card_view:cpv_textSize="25sp"
+                    card_view:cpv_unit="%"
+                    card_view:cpv_unitPosition="right_top"
+                    card_view:cpv_unitSize="25sp"
+                    card_view:cpv_value="0" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</LinearLayout>

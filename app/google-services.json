@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "791646588851",
+    "firebase_url": "https://trackurspot-admin-f452b.firebaseio.com",
+    "project_id": "trackurspot-admin-f452b",
+    "storage_bucket": "trackurspot-admin-f452b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:791646588851:android:1de68c7956623461",
+        "android_client_info": {
+          "package_name": "com.tusadmin.trackurspot_admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "791646588851-282dbpdjhf9ic89caoc7ddtfsi78859r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtYFx6t32REsQvdnE-X0l3soUo96oKvPU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
